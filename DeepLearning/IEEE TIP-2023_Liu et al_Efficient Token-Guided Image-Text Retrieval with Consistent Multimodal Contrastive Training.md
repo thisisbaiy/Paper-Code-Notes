@@ -21,7 +21,7 @@
 
 ****
 
-![算法核心流程](../../../software/Typora/Typora/images/image-20240215162432429.png)
+![算法核心流程](https://raw.githubusercontent.com/thisisbaiy/PicGo/main/image-20240215162432429.png)
 
 ### 1.2 图像处理
 
@@ -53,11 +53,11 @@
 
 使用Consistent Multimodal Contrastive Training (CMC) loss 同时训练两个网络（全局和局部）
 
-![image-20240215170910709](../../../software/Typora/Typora/images/image-20240215170910709.png)
+![image-20240215170910709](https://raw.githubusercontent.com/thisisbaiy/PicGo/main/image-20240215170910709.png)
 
 **传统方法Multimodal Contrastive Loss ：**
 
-![image-20240215171400500](../../../software/Typora/Typora/images/image-20240215171400500.png)
+![image-20240215171400500](https://raw.githubusercontent.com/thisisbaiy/PicGo/main/image-20240215171400500.png)
 
 也就是通过找到一个锚点图片的最难负样本和相应的文本，通过找到一个锚点文本的最难负样本和相应的图片
 
@@ -65,13 +65,13 @@
 
 **改进Consistent Multimodal Contrastive Loss  ：**
 
-![image-20240215171531345](../../../software/Typora/Typora/images/image-20240215171531345.png)
+![image-20240215171531345](https://raw.githubusercontent.com/thisisbaiy/PicGo/main/image-20240215171531345.png)
 
 增加了模态内约束。它旨在确保在同一模态（图像与图像或文本与文本）中，不匹配的对也在嵌入空间中分离。变量σ充当松弛变量，以灵活地控制来自不同模态的样本距离之间的间隙，允许一些不一致以适应距离的自然变化。
 
 **CMC Loss**
 
-![image-20240215174126774](../../../software/Typora/Typora/images/image-20240215174126774.png)
+![image-20240215174126774](https://raw.githubusercontent.com/thisisbaiy/PicGo/main/image-20240215174126774.png)
 
 一方面，Lr控制样本之间的距离。另一方面，La保证了匹配样本之间距离的一致性。因此，结合两种损失可以保证多模态样本之间的**局部和全局相似度的一致性。**
 
@@ -89,7 +89,7 @@
 
 最终训练损失函数：
 
-![image-20240215174946765](../../../software/Typora/Typora/images/image-20240215174946765.png)
+![image-20240215174946765](https://raw.githubusercontent.com/thisisbaiy/PicGo/main/image-20240215174946765.png)
 
 表示总损失是**全局和局部相似性的 CMC 损失之和**。这种组合损失函数允许模型在**端到端**可训练网络中跨两种模态（图像和文本）共同学习全局和局部表示。该方法旨在利用多任务学习来约束参数空间，与单独训练它们相比，在这两个任务上都能获得更好的表示和更高的性能。
 

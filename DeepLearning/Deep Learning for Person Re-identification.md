@@ -15,7 +15,7 @@ we categorize it into the closed-world and open-world settings.
 
 ### 2.1 构建一个ReID系统需要的五个步骤
 
-![image-20240218160059146](../../../software/Typora/Typora/images/image-20240218160059146.png)
+![image-20240218160059146](https://raw.githubusercontent.com/thisisbaiy/PicGo/main/image-20240218160059146.png)
 
 1. 原始数据采集
 2. 生成边界框：框出其中的行人，借助算法：**person detection** or **tracking algorithms**
@@ -28,7 +28,7 @@ we categorize it into the closed-world and open-world settings.
 
 ### 2.2 学术环境与实际应用场景对比
 
-![image-20240218160236511](../../../software/Typora/Typora/images/image-20240218160236511.png)
+![image-20240218160236511](https://raw.githubusercontent.com/thisisbaiy/PicGo/main/image-20240218160236511.png)
 
 |                    | **学术环境**                                                 | **实际应用场景**                                             |
 | ------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
@@ -64,7 +64,7 @@ we categorize it into the closed-world and open-world settings.
 3. Auxiliary Feature——it improves the feature representation learning **using auxiliary information,** e.g., **attributes** [71], [72], [78], GAN generated images [42], etc  
 4. Video Feature——it learns video representation for video-based Re-ID [7] **using multiple image frames and temporal information** [73], [74  
 
-![image-20240218205124813](../../../software/Typora/Typora/images/image-20240218205124813.png)
+![image-20240218205124813](https://raw.githubusercontent.com/thisisbaiy/PicGo/main/image-20240218205124813.png)
 
 #### 2.1.1 Global Feature Representation Learning
 
@@ -108,7 +108,7 @@ additional challenges
 
 identity loss, verification loss and triplet loss  
 
-![image-20240219160950101](../../../software/Typora/Typora/images/image-20240219160950101.png)
+![image-20240219160950101](https://raw.githubusercontent.com/thisisbaiy/PicGo/main/image-20240219160950101.png)
 
 Re-ID领域中常用的四种损失函数及其作用：
 
@@ -154,7 +154,7 @@ Re-ID领域中常用的四种损失函数及其作用：
 
 #### 2.3.1 Re-ranking  
 
-![image-20240219165610757](../../../software/Typora/Typora/images/image-20240219165610757.png)
+![image-20240219165610757](https://raw.githubusercontent.com/thisisbaiy/PicGo/main/image-20240219165610757.png)
 
 通过不同的技术和方法（如重排、查询适应性和人机交互）来实现更准确的排名顺序。这些方法能够根据不同的情境和需求，灵活地优化排名结果，从而提高检索的准确性和效率。
 
@@ -181,9 +181,9 @@ https://github.com/NEU-Gou/awesome-reid-dataset?tab=readme-ov-file
 
 **一些代表性方法**
 
-![image-20240219200811035](../../../software/Typora/Typora/images/image-20240219200811035.png)
+![image-20240219200811035](https://raw.githubusercontent.com/thisisbaiy/PicGo/main/image-20240219200811035.png)
 
-![image-20240219200833755](../../../software/Typora/Typora/images/image-20240219200833755.png)
+![image-20240219200833755](https://raw.githubusercontent.com/thisisbaiy/PicGo/main/image-20240219200833755.png)
 
 ## 3 OPEN-WORLD PERSON RE-IDENTIFICATION
 
@@ -246,7 +246,7 @@ Early unsupervised Re-ID mainly **learns invariant components, i.e., dictionary 
 - **进一步改进的空间**：包括在无监督Re-ID中应用强大的注意力机制，目标域图像生成的有效性，以及使用注释源数据进行跨数据集学习。
 - **无监督与监督Re-ID之间的差距**：尽管无监督Re-ID取得了显著进展，但与监督Re-ID相比仍有较大差距。例如，监督方法ConsAtt在Market-1501数据集上的rank-1准确率达到96.1%，而无监督方法SpCL的最高准确率为90.3%。
 
-![image-20240222181346734](../../../software/Typora/Typora/images/image-20240222181346734.png)
+![image-20240222181346734](https://raw.githubusercontent.com/thisisbaiy/PicGo/main/image-20240222181346734.png)
 
 ### 3.4 Noise-Robust Re-ID
 
